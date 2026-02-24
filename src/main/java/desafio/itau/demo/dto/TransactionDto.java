@@ -1,9 +1,12 @@
-package desafio.itau.demo.model;
+package desafio.itau.demo.dto;
+
+import java.time.OffsetDateTime;
+
+import jakarta.validation.constraints.NotNull;
 
 public class TransactionDto {
 
     @NotNull
-    @Min(0)
     private Double valor;
 
     @NotNull

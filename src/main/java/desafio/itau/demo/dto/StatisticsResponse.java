@@ -1,4 +1,6 @@
-package desafio.itau.demo.model;
+package desafio.itau.demo.dto;
+
+import java.util.DoubleSummaryStatistics;
 
 public class StatisticsResponse {
     
@@ -8,13 +10,16 @@ public class StatisticsResponse {
     private double max;
     private double min;
     
-
     public StatisticsResponse(DoubleSummaryStatistics stats) {
         this.count = stats.getCount();
         this.sum = stats.getSum();
         this.avg = stats.getAverage();
         this.max = stats.getMax();
         this.min = stats.getMin();
+    }
+
+    public long getCount() {
+        return count;
     }
 
     public double getSum() {
@@ -31,9 +36,5 @@ public class StatisticsResponse {
 
     public double getMin() {
         return min;
-    }
-
-    public long getCount() {
-        return count;
     }
 }

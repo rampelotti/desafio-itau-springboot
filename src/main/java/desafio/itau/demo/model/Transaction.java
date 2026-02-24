@@ -1,5 +1,7 @@
 package desafio.itau.demo.model;
 
+import java.time.OffsetDateTime;
+
 public class Transaction {
     
     private double valor;
